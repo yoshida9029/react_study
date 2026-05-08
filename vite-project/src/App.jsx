@@ -1,12 +1,9 @@
-
 import './App.css'
 
 function App() {
-
-
   return (
     <>
-    <h1>Vite+React初期状態</h1>
+    <h1>2026年5月8日</h1>
     </>
   )
 }
