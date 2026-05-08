@@ -25,7 +25,7 @@ export default function Formtextarea(){
             <textarea name="comment" id="comment" cols="30" rows="7" 
             value={form.comment} onChange={handleForm}></textarea>
             <br />
-            <button tipe="button" onClick={show}>
+            <button type="button" onClick={show}>
             送信</button>
         </form>
     );

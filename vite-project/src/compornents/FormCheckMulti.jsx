@@ -55,7 +55,7 @@ export default function FormCheckMulti(){
                 <br />
 
             </fieldset>
-            <button tipe="button" onClick={show}>
+            <button type="button" onClick={show}>
             送信</button>
         </form>
     );

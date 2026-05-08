@@ -39,7 +39,7 @@ export default function FormtRadio(){
                 </fieldset>
             
             
-            <button tipe="button" onClick={show}>
+            <button type="button" onClick={show}>
             送信</button>
         </form>
     );

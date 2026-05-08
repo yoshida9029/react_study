@@ -27,7 +27,7 @@ export default function FormSelect(){
                     <option value="hamster">ハムスター</option>
                     <option value="rabbit">ウサギ</option>
                 </select>
-            <button tipe="button" onClick={show}>
+            <button type="button" onClick={show}>
             送信</button>
         </form>
     );

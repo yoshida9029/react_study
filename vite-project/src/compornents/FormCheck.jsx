@@ -25,7 +25,7 @@ export default function FormCheck(){
             <input name="checkbox" id="agreement" type="checkbox" 
             checked={form.agreement} onChange={handleForm}></input>
             <br />
-            <button tipe="button" onClick={show}>
+            <button type="button" onClick={show}>
             送信</button>
         </form>
     );
