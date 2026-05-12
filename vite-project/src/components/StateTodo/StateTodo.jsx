@@ -1,10 +1,11 @@
 import { useState } from "react"
+import styles from './StateTodo.module.css';
 
 export default function StateTodo() {
     const[maxId , setMaxId] = useState(1);
     const[title , setTitle] = useState('');
     const[todo , setTodo] = useState([]);
-    const[desc , setDone] = useState(true);
+    const[desc , setDesc] = useState(true);
 
     const handleChangeTitle = e =>{
         setTitle(e.target.value);
@@ -57,7 +58,7 @@ export default function StateTodo() {
     };
 
     return(
-        <div>
+        <div className={styles.wrapper}>
         <label>
         やること:
         <input type="text" name="title"

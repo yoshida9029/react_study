@@ -1,0 +1,9 @@
+.done{
+    text-decoration: line-through;
+}
+.wrapper{
+    padding: 16px;
+    border: 2px solid black;
+}
+
+/* CSS Modulesを使う場合は、スタイリング指定はクラス属性を使って下さい */
