@@ -1,0 +1,10 @@
+.baseColor{
+    background-color: lightgreen;
+    color: #333;
+}
+
+.box{
+    composes: accentColor from '../../styles/shared.module.css';
+    border: 2px solid black;
+}
+
