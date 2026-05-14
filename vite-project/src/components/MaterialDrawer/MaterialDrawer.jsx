@@ -1,0 +1,39 @@
+import styles from './MaterialDrawer.module.css';
+import {Mail, Home, Info, AccountTree} from '@mui/icons-material';
+import { Box, Button, Drawer, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from '@mui/material';
+import { useState } from 'react';
+
+const menu = [
+    {title: 'ホーム' , href: 'home.html' , icon: Home},
+    {title: '問い合わせ' , href: 'contact.html' , icon: Mail},
+    {title: '会社概要' , href: 'company.html' , icon: Info},
+    {title: 'サイトマップ' , href: 'sitemap.html' , icon: AccountTree},
+];
+
+export default function MaterialDrawer(){
+    const [show , setshow] = useState(false);
+    const handleDraw = () => setshow(!show);
+
+    return(
+        <>
+        <Button onClick={handleDraw}>ドロワー</Button>
+        <Drawer anchor='left' opem={show}>
+            <Box sx={{height: '100vh'}} onClick={handleDraw}>
+                <List>
+                    {menu.map(obj => {
+                        const Icon = obj.icon;
+                        return(
+                            <ListItem key={obj .title}>
+                                <ListItemButton href={obj.href}>
+                                    <ListItemIcon><Icon /></ListItemIcon>
+                                    <ListItemText primary={obj.title} />
+                                </ListItemButton>
+                            </ListItem>
+                        );
+                    })}
+                </List>
+            </Box>
+        </Drawer>
+        </>
+    );
+}
