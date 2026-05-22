@@ -1,0 +1,30 @@
+/* src/styles/global.css */
+
+:root {
+    --color-bg: #ffffff;
+    --color-text: #222222;
+    --color-card: #f3f4f6;
+    --color-border: #dddddd;
+    --color-button-bg: #222222;
+    --color-button-text: #ffffff;
+}
+
+:root[data-theme="dark"] {
+    --color-bg: #111827;
+    --color-text: #f9fafb;
+    --color-card: #1f2937;
+    --color-border: #374151;
+    --color-button-bg: #f9fafb;
+    --color-button-text: #111827;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button {
+    cursor: pointer;
+}
