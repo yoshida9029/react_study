@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-    <h1>Vite+React初期状態</h1>
+    <h1>テスト・Vitest</h1>
     </>
   )
 }
